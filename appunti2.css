@@ -582,3 +582,15 @@ body {
 .dropdown-content {
   transition: all 0.3s ease-in-out;
 }
+/* Sticky header base style */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Classi dinamiche */
+.header-hidden {
+  transform: translateY(-100%);
+}
