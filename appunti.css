@@ -1,0 +1,195 @@
+/* === Base Style === */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #0b0c2a;
+    color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #6fb8ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* === Header === */
+header {
+    background-color: #0e112d;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #1a1f3d;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #3fa6ff;
+    letter-spacing: 1px;
+}
+
+/* === Navigation === */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #e0e0e0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3fa6ff;
+}
+
+/* === Section Containers === */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #1c1f3f;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-left: 6px solid #3fa6ff;
+    padding-left: 12px;
+}
+
+/* === Category Highlights === */
+#MaterieMatematiche h2 {
+    border-left-color: #d94a4a;
+}
+#MaterieMatematiche a {
+    color: #ff7b7b;
+}
+#MaterieMatematiche a:hover {
+    color: #ffaaaa;
+}
+
+#MaterieEconomiche h2 {
+    border-left-color: #46c17d;
+}
+#MaterieEconomiche a {
+    color: #74e2ae;
+}
+#MaterieEconomiche a:hover {
+    color: #b3f3d5;
+}
+
+/* === Article Blocks === */
+article {
+    background-color: #131635;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 20, 40, 0.4);
+    transition: transform 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 16px rgba(63, 166, 255, 0.3);
+}
+
+article h3, article h4, article h5, article h6, article h7 {
+    margin-top: 0;
+    color: #6fb8ff;
+}
+
+/* === Dynamic Buttons (Replaced old) === */
+button,
+.pdf-buttons a,
+article a.button-link {
+    background: linear-gradient(135deg, #3fa6ff, #1d5dab);
+    color: #fff;
+    padding: 10px 16px;
+    margin-top: 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover,
+.pdf-buttons a:hover,
+article a.button-link:hover {
+    background: linear-gradient(135deg, #55c0ff, #2d7de6);
+    transform: scale(1.05);
+}
+
+/* === List in Algoritmi/Metodi === */
+article ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+article ul li {
+    margin-bottom: 8px;
+    list-style: disc;
+    color: #b4d5ff;
+}
+
+.pdf-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.pdf-button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: white;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* MATEMATICA - Viola */
+.pdf-button.math {
+    background: linear-gradient(135deg, #6f42c1, #b38dff);
+    color: #ffffff !important;
+}
+.pdf-button.math:hover {
+    background: linear-gradient(135deg, #8a63d2, #cfaaff);
+}
+
+/* INFORMATICA - Verde */
+.pdf-button.info {
+    background: linear-gradient(135deg, #28a745, #7bed9f);
+    color: #ffffff !important;
+}
+.pdf-button.info:hover {
+    background: linear-gradient(135deg, #3ddc84, #a6f4c5);
+}
+
+/* ECONOMIA - Giallo */
+.pdf-button.econ {
+    background: linear-gradient(135deg, #f7c948, #ffe066);
+    color: #ffffff !important;
+}
+.pdf-button.econ:hover {
+    background: linear-gradient(135deg, #fcd34d, #fff3a6);
+}
