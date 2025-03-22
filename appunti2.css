@@ -420,3 +420,46 @@ nav a:hover {
         padding: 16px;
     }
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px;
+        text-align: left;
+    }
+
+    header img {
+        width: 90px; /* più piccolo */
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* ridotto */
+        margin-top: 4px;
+    }
+
+    .header-sub {
+        font-size: 0.8rem; /* sottotitolo più piccolo */
+        margin-top: 4px;
+        max-width: 100%;
+        display: block;
+        text-align: left;
+        color: #888;
+        font-style: italic;
+    }
+
+    .menu-button {
+        top: 16px;
+        right: 16px;
+        font-size: 1.2rem;
+    }
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+.header-sub {
+    font-style: italic;
+    color: #aaa;
+    font-size: 0.9rem;
+}
