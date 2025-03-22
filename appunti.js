@@ -58,3 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+function toggleMenu() {
+  const dropdown = document.querySelector('.dropdown');
+  dropdown.classList.toggle('show');
+}
