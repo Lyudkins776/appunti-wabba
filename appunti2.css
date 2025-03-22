@@ -365,3 +365,58 @@ nav a:hover {
   .submenu a:hover {
     color: #3fa6ff;
   }
+
+/* === Responsive Design === */
+.menu-button {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #6fb8ff;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0e112d;
+        border: 1px solid #1a1f3d;
+        padding: 10px;
+        z-index: 999;
+    }
+
+    .dropdown.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .pdf-buttons {
+        flex-direction: column;
+    }
+
+    article {
+        padding: 16px;
+    }
+}
